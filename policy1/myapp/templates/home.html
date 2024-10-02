@@ -1,0 +1,104 @@
+<!-- myapp/templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    
+    <!-- Load static files -->
+    {% load static %}
+    
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="{% static 'myapp/css/home.css' %}">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="logo">
+            <img src="{% static 'myapp/css/logo.png' %}">
+
+        </div>
+        <div class="buttons">
+            <button class="home">
+               Explore
+            </button>
+            <button class="about">
+                Chatbot
+            </button>
+            <button class="new">
+                Support
+            </button>
+        </div>
+    </div>
+
+
+    <div class="mainarea">
+        <div class="tagline">
+            <h1>
+                Bringing you<br>better policies
+            </h1>
+            <img src="{% static 'myapp/css/policy.png' %}">
+
+        </div>
+    </div>
+
+    <div class="policycards">
+        <div class="cards">
+            <h1 class="policy">
+                FamilyProtect Plan
+            </h1>
+            <p class="policydesc">
+                Provides coverage for multiple drivers in the same household with accident forgiveness for family members.
+            </p>
+        </div>
+        <div class="cards">
+            <h1 class="policy">
+                SafeMiles Rewards
+            </h1>
+            <p class="policydesc">
+                Earns discounts based on mileage and safe driving habits tracked through the app.
+            </p>
+        </div>
+        <div class="cards">
+            <h1 class="policy">
+                ClassicRide Coverage
+            </h1>
+            <p class="policydesc">
+                Tailored for vintage and luxury car owners, with specialized repair options and agreed-value coverage.
+            </p>
+        </div>
+        
+    </div>
+
+    <div class="policycards">
+        <div class="cards">
+            <h1 class="policy">
+                EcoDrive Policy
+            </h1>
+            <p class="policydesc">
+                Offers lower premiums for hybrid and electric vehicle owners with added coverage for charging stations.
+            </p>
+        </div>
+        <div class="cards">
+            <h1 class="policy">
+                Car Insurance
+            </h1>
+            <p class="policydesc">
+                DriveSafe Insurance offers comprehensive coverage with 24/7 roadside assistance, customizable plans, and discounts for safe driving.
+            </p>
+        </div>
+        <div class="cards">
+            <h1 class="policy">
+                SpeedGuard Plus
+            </h1>
+            <p class="policydesc">
+                Includes additional protection for speeding violations with accident prevention courses to reduce future premiums.
+            </p>
+        </div>
+        
+    </div>
+    
+
+</body>
+</html>
